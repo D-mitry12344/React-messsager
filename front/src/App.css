@@ -1,0 +1,359 @@
+@font-face{
+  font-family:'Mariupol';
+  src: url(Mariupol-Regular.ttf);
+}
+
+
+*{
+  font-family:'Mariupol';
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  background: none;
+  transition-duration: 0.3s;
+}
+
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: #14171c;
+  width: 100%;
+  height: 100%;
+}
+
+#root{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #14171c;
+}
+
+.user-change{
+  width: 20%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 100px;
+  background: #7b8ead;
+}
+
+.user-change h2{
+  text-align: center;
+  color: #bacbe8;
+}
+
+.user-change ul{
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+
+@media(max-width: 900px){
+  .user-change{
+    padding: 100px 0;
+    width: 80%;
+  }
+
+}
+
+@media(max-width: 500px){
+  .user-change{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.user-change__new-user{
+  width: 80%;
+  display: block;
+  height: auto;
+  color: #fff;
+  background: #51617a;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.user-change__new-user input, .user-change__new-user button{
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #d4d4d4;
+  text-align: center;
+}
+
+ .user-change__new-user button{
+    background: #bacbe8;
+ }
+
+  .user-change__new-user button:hover{
+    background: #51619a;
+    color: #fff;
+  }
+
+.user-change__new-user input:focus{
+  outline: none;
+  background: #bacbe8;
+}
+
+.user-change__new-user label{
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.user-change ul li{
+  border: 2px solid #d4d4d4;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  background: #bacbe8;
+  padding: 10px;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.user-change ul li:hover{
+  background: #51617a;
+}
+
+
+.user{
+  min-width: 100px;
+  max-width: 200px;
+  border: 2px solid #fff;
+  border-radius: 30px 20px 0px 30px;
+  padding: 10px;
+  margin: 10px 0;
+  margin-right: 10px;
+  margin-left: auto;
+  background: #bacbe8;
+}
+
+.user.active{
+  margin-left: 10px;
+  border-radius: 20px 30px 30px 0px;
+}
+
+
+.user.active .nameMes{
+  text-align: left;
+}
+
+.nameMes{
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: right;
+  color: #485770;
+}
+.textMes{
+  padding: 10px;
+  margin: 0;
+  width: 200px;
+  height: auto;
+
+}
+
+.user.active .textMes{
+   padding-left: 0px;
+  padding-right: 10px;
+}
+
+.timeMes{
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+   font-weight: 600;
+  text-align: right;
+  color: #485770;
+}
+
+
+.user.active .timeMes{
+  text-align: left;
+}
+
+
+
+.block-messager{
+  margin: 0 auto;
+  width: 80%;
+  height: 700px;
+  border: 1px solid black;
+  padding: 30px 0;
+  list-style: none;
+  overflow: auto;
+  background: #7b8ead;
+  scroll-behavior: smooth;
+}
+
+.inputDiv{
+  display: flex;
+  background:  #46556e;
+  width: 100%;
+}
+
+.inputDiv textarea{
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+  padding: 15px;
+  height: 20px;
+  background: #7b8ead;
+  border: 1px solid #a4a4a4;
+  border-radius: 20px;
+  margin-right: 40px;
+  font-size: 18px;
+  min-height: 10px;
+  overflow: hidden;
+  resize: none;
+}
+
+.inputDiv textarea:focus{
+  outline: none;
+  background: #bacbe8;
+}
+
+
+.inputDiv-btn{
+  width: 100px;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.inputDiv-btn img{
+  width: 50%;
+  margin-top: 0px;
+}
+
+.inputDiv-btn:hover img{
+  transform: scale(1.1);
+  margin-top: -10px;
+}
+
+
+.App{
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  border: 1px solid black;
+  background: #313b4d;
+  position: relative;
+  overflow: hidden;
+}
+
+.App__header{
+  height: 90px;
+  padding-top: 10px;
+  background:  #46556e;
+  width: 100%;
+}
+
+.App__header-title{
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url('ribbon.svg') no-repeat  ;
+  background-size: 300px;
+  background-position: 50% 52%;
+}
+
+.App-header-name{
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  height: 60px;
+}
+
+@media (max-width: 760px){
+  .App__header{ 
+      height: 150px;
+   }
+
+  .App-header-name{
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: auto;
+    top: 80px;
+  }
+}
+
+
+.App-header-name p{
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.App-header-name img{
+  width: 60px;
+  border-radius: 50px;
+  border: 1px solid #d4d4d4;
+  background: #e4e4e4;
+}
+
+.Preload{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  background: #14171c;
+  border: hidden;
+}
+
+.Preload-none{
+  display: none;
+}
+
+.Preload h1{
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.Preload img{
+  display: block;
+  width: 20%;
+  margin: 10px auto;
+  animation: 3s rotateImg infinite;
+}
+
+
+@keyframes rotateImg{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(360deg) scale(0.5 ,0.5);
+  }
+
+  100%{
+    transform: rotate(720deg);
+  }
+}
